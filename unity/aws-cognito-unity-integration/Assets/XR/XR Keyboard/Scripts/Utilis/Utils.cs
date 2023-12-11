@@ -1,0 +1,111 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Amazon.XR.Keyboard
+{
+    public class Utils
+    {
+        public static string GetKeyValue(KeyCode key)
+        {
+            if (_keyLookup.TryGetValue(key, out string val))
+            {
+                return val;
+            }
+            return "";
+        }
+
+        private static readonly Dictionary<KeyCode, string> _keyLookup = new Dictionary<KeyCode, string>()
+        {
+            { KeyCode.A, "a" },
+            { KeyCode.B, "b" },
+            { KeyCode.C, "c" },
+            { KeyCode.D, "d" },
+            { KeyCode.E, "e" },
+            { KeyCode.F, "f" },
+            { KeyCode.G, "g" },
+            { KeyCode.H, "h" },
+            { KeyCode.I, "i" },
+            { KeyCode.J, "j" },
+            { KeyCode.K, "k" },
+            { KeyCode.L, "l" },
+            { KeyCode.M, "m" },
+            { KeyCode.N, "n" },
+            { KeyCode.O, "o" },
+            { KeyCode.P, "p" },
+            { KeyCode.Q, "q" },
+            { KeyCode.R, "r" },
+            { KeyCode.S, "s" },
+            { KeyCode.T, "t" },
+            { KeyCode.U, "u" },
+            { KeyCode.V, "v" },
+            { KeyCode.W, "w" },
+            { KeyCode.X, "x" },
+            { KeyCode.Y, "y" },
+            { KeyCode.Z, "z" },
+            { KeyCode.Keypad0, "0" },
+            { KeyCode.Keypad1, "1" },
+            { KeyCode.Keypad2, "2" },
+            { KeyCode.Keypad3, "3" },
+            { KeyCode.Keypad4, "4" },
+            { KeyCode.Keypad5, "5" },
+            { KeyCode.Keypad6, "6" },
+            { KeyCode.Keypad7, "7" },
+            { KeyCode.Keypad8, "8" },
+            { KeyCode.Keypad9, "9" },
+            { KeyCode.Alpha0, "0" },
+            { KeyCode.Alpha1, "1" },
+            { KeyCode.Alpha2, "2" },
+            { KeyCode.Alpha3, "3" },
+            { KeyCode.Alpha4, "4" },
+            { KeyCode.Alpha5, "5" },
+            { KeyCode.Alpha6, "6" },
+            { KeyCode.Alpha7, "7" },
+            { KeyCode.Alpha8, "8" },
+            { KeyCode.Alpha9, "9" },
+            { KeyCode.Exclaim, "!" },
+            { KeyCode.At, "@" },
+            { KeyCode.Hash, "#" },
+            { KeyCode.Dollar, "$" },
+            { KeyCode.Percent, "%" },
+            { KeyCode.Caret, "^" },
+            { KeyCode.Ampersand, "&" },
+            { KeyCode.Asterisk, "*" },
+            { KeyCode.LeftParen, "(" },
+            { KeyCode.RightParen, ")" },
+            { KeyCode.Minus, "-" },
+            { KeyCode.Underscore, "_" },
+            { KeyCode.Equals, "=" },
+            { KeyCode.Plus, "+" },
+            { KeyCode.Comma, "," },
+            { KeyCode.Period, "." },
+            { KeyCode.Less, "<" },
+            { KeyCode.Greater, ">" },
+            { KeyCode.Question, "?" },
+            { KeyCode.Slash, "/" },
+            { KeyCode.Backslash, "\\" },
+            { KeyCode.Pipe, "|" },
+            { KeyCode.Semicolon, ";" },
+            { KeyCode.Colon, ":" },
+            { KeyCode.DoubleQuote, "\"" },
+            { KeyCode.Quote, "'" },
+            { KeyCode.BackQuote, "`" },
+            { KeyCode.Tilde, "~" },
+            { KeyCode.LeftBracket, "["},
+            { KeyCode.RightBracket, "]"},
+            { KeyCode.LeftCurlyBracket, "{"},
+            { KeyCode.RightCurlyBracket, "}"},
+            { KeyCode.Escape, "Esc" },
+            { KeyCode.LeftShift, "Shift" },
+            { KeyCode.RightShift, "Shift" },
+            { KeyCode.CapsLock, "Caps Lock" },
+            { KeyCode.Return, "Return" },
+            { KeyCode.Backspace, "Backspace" },
+            { KeyCode.Delete, "Delete" },
+            { KeyCode.LeftControl, "Ctrl"},
+            { KeyCode.RightControl, "Ctrl"},
+            { KeyCode.Space, "Space"},
+            { KeyCode.Clear, "Clear"},
+            { KeyCode.Numlock, "123"},
+        };
+    }
+}
